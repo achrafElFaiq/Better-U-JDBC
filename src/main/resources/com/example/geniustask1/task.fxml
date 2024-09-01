@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox fx:id="vbox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="167.0" prefWidth="503.0" style="-fx-border-radius: 20; -fx-background-radius: 20;" stylesheets="@LaunchStyle.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.geniustask1.TaskController">
+   <children>
+      <Label fx:id="title" alignment="CENTER" onMouseClicked="#loadtaskQuestions" prefHeight="21.0" prefWidth="508.0" styleClass="image-view" text="Sleep Organiser" textFill="WHITE">
+         <font>
+            <Font name="DIN Condensed Bold" size="15.0" />
+         </font>
+         <VBox.margin>
+            <Insets top="5.0" />
+         </VBox.margin>
+         <padding>
+            <Insets left="8.0" />
+         </padding>
+      </Label>
+      <Label fx:id="status" alignment="CENTER" prefHeight="14.0" prefWidth="46.0" style="-fx-background-color: transparent; -fx-border-radius: 0; -fx-background-radius: 2;">
+         <font>
+            <Font name="DIN Condensed Bold" size="10.0" />
+         </font>
+         <VBox.margin>
+            <Insets left="390.0" />
+         </VBox.margin>
+      </Label>
+      <Text fx:id="description" fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet." wrappingWidth="447.9710350036621">
+         <font>
+            <Font name="DIN Condensed Bold" size="12.0" />
+         </font>
+         <VBox.margin>
+            <Insets left="8.0" top="6.0" />
+         </VBox.margin>
+      </Text>
+   </children>
+</VBox>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="40.0" prefWidth="497.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.geniustask1.ReponseController">
+   <children>
+      <Label fx:id="date" layoutX="8.0" layoutY="11.0" prefHeight="16.0" prefWidth="62.0" style="-fx-background-color: #d6d6d6;" text="Label">
+         <font>
+            <Font name="DIN Condensed Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label fx:id="reponse" layoutX="103.0" layoutY="11.0" prefHeight="18.0" prefWidth="398.0" style="-fx-background-color: #d6d6d6;" text="Label">
+         <font>
+            <Font name="DIN Condensed Bold" size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

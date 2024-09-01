@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@LaunchStyle.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.geniustask1.SurveyController">
+   <left>
+      <AnchorPane prefHeight="400.0" prefWidth="34.0" style="-fx-background-color: #D6D6D6;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="HomeIcon" fitHeight="11.0" fitWidth="10.0" layoutX="10.0" layoutY="100.0" onMouseClicked="#loadhome" onMouseEntered="#zoomImage" onMouseExited="#zoomOut" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@home.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="11.0" fitWidth="10.0" layoutX="10.0" layoutY="134.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@to-do-list.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="401.0" prefWidth="563.0" style="-fx-background-color: #f3f3f3;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="account" fitHeight="15.0" fitWidth="15.0" layoutX="543.0" layoutY="14.0" onMouseClicked="#loadlogin" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@account.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="back" fitHeight="15.0" fitWidth="15.0" layoutX="10.0" layoutY="14.0" onMouseClicked="#loadhome" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@back.png" />
+               </image>
+            </ImageView>
+            <ScrollPane fx:id="scrollPane" layoutX="21.0" layoutY="83.0" prefHeight="272.0" prefWidth="522.0" style="-fx-background-color: transparent; -fx-vbar-policy: NEVER;">
+               <content>
+                  <AnchorPane fx:id="anchorPane" prefHeight="636.0" prefWidth="520.0">
+                     <children>
+                        <Button fx:id="addquestion1" layoutX="337.0" layoutY="2.0" mnemonicParsing="false" onMouseClicked="#removeLastTextFields" prefHeight="25.0" prefWidth="78.0" style="-fx-background-color: transparent;" styleClass="image-view" text="-">
+                           <font>
+                              <Font name="DIN Condensed Bold" size="20.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="addquestion" layoutX="94.0" mnemonicParsing="false" onMouseClicked="#ajouterTextFields" prefHeight="25.0" prefWidth="78.0" style="-fx-background-color: transparent;" styleClass="image-view" text="+">
+                           <font>
+                              <Font name="DIN Condensed Bold" size="20.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="login" layoutX="216.0" layoutY="9.0" mnemonicParsing="false" onMouseClicked="#completeTaskInfo" prefHeight="25.0" prefWidth="78.0" style="-fx-background-color: transparent;" text="CREATE TASK">
+                           <font>
+                              <Font name="DIN Condensed Bold" size="13.0" />
+                           </font>
+                        </Button>
+                        <TextField layoutX="95.0" layoutY="38.0" prefHeight="25.0" prefWidth="320.0" promptText="Question" style="-fx-background-color: #D6D6D6;">
+                           <font>
+                              <Font name="DIN Condensed Bold" size="10.0" />
+                           </font>
+                        </TextField>
+                        <TextField layoutX="94.0" layoutY="69.0" prefHeight="25.0" prefWidth="320.0" promptText="Answer" style="-fx-background-color: #D6D6D6;">
+                           <font>
+                              <Font name="DIN Condensed Bold" size="10.0" />
+                           </font>
+                        </TextField>
+                        <TextField fx:id="descriptiontext" alignment="TOP_LEFT" layoutX="95.0" layoutY="114.0" prefHeight="24.0" prefWidth="320.0" promptText="Question" style="-fx-background-color: #D6D6D6;" AnchorPane.leftAnchor="95.0">
+                           <font>
+                              <Font name="DIN Condensed Bold" size="10.0" />
+                           </font>
+                        </TextField>
+                        <TextField layoutX="95.0" layoutY="146.0" prefHeight="25.0" prefWidth="320.0" promptText="Answer" style="-fx-background-color: #D6D6D6;">
+                           <font>
+                              <Font name="DIN Condensed Bold" size="10.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </AnchorPane>
+               </content>
+            </ScrollPane>
+            <Text layoutX="168.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Before you start answer each question honestly">
+               <font>
+                  <Font name="DIN Condensed Bold" size="13.0" />
+               </font>
+            </Text>
+            <Text layoutX="52.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="If more question are needed click the plus on the right, Ps: put the question first then answer it in the next field">
+               <font>
+                  <Font name="DIN Condensed Bold" size="13.0" />
+               </font>
+            </Text>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </AnchorPane>
+   </center>
+</BorderPane>

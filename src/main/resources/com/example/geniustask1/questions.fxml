@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@LaunchStyle.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.geniustask1.QuestionsController">
+   <children>
+      <ScrollPane layoutX="41.0" layoutY="14.0" prefHeight="384.0" prefWidth="519.0" style="-fx-background-color: transparent; -fx-vbar-policy: NEVER;">
+         <content>
+            <AnchorPane fx:id="anchorPane" prefHeight="673.0" prefWidth="514.0" style="-fx-background-color: transparent;" />
+         </content>
+      </ScrollPane>
+      <ImageView fx:id="back" fitHeight="15.0" fitWidth="15.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#loadTasks" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@back.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

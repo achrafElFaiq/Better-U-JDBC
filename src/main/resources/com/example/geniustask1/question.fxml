@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="44.0" prefWidth="491.0" stylesheets="@LaunchStyle.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.geniustask1.QuestionController">
+   <children>
+      <Label fx:id="question" layoutX="4.0" layoutY="8.0" onMouseClicked="#loadResponses" prefHeight="18.0" prefWidth="482.0" style="-fx-background-color: #D6D6D6; -fx-background-radius: 6;" styleClass="image-view.text" text="Label" AnchorPane.topAnchor="8.0">
+         <font>
+            <Font name="DIN Condensed Bold" size="13.0" />
+         </font>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="image-view" stylesheets="@LaunchStyle.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.geniustask1.QuestionnaireController">
+   <children>
+      <ScrollPane fx:id="scrollPane" layoutX="31.0" layoutY="93.0" prefHeight="272.0" prefWidth="522.0" style="-fx-background-color: transparent; -fx-vbar-policy: NEVER;">
+         <content>
+            <AnchorPane fx:id="anchorPane" prefHeight="785.0" prefWidth="520.0" />
+         </content>
+      </ScrollPane>
+      <Button fx:id="answer" layoutX="260.0" layoutY="28.0" mnemonicParsing="false" onMouseClicked="#storeData" style="-fx-background-color: transparent;" text="Answer">
+         <font>
+            <Font name="DIN Pro Bold" size="13.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

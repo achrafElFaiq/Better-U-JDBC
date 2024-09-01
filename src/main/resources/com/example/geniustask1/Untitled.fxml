@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.geniustask1.ClientProfileController">
+   <left>
+      <AnchorPane prefHeight="400.0" prefWidth="34.0" style="-fx-background-color: #D6D6D6;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="HomeIcon" fitHeight="11.0" fitWidth="10.0" layoutX="10.0" layoutY="100.0" onMouseClicked="#loadhome" onMouseEntered="#zoomImage" onMouseExited="#zoomOut" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@home.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="11.0" fitWidth="10.0" layoutX="10.0" layoutY="134.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@to-do-list.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="401.0" prefWidth="563.0" style="-fx-background-color: #f3f3f3;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fx:id="account" fitHeight="15.0" fitWidth="15.0" layoutX="542.0" layoutY="14.0" onMouseClicked="#loadlogin" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@account.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="back" fitHeight="15.0" fitWidth="15.0" layoutX="10.0" layoutY="14.0" onMouseClicked="#loadhome" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@back.png" />
+               </image>
+            </ImageView>
+            <ScrollPane layoutX="21.0" layoutY="83.0" prefHeight="272.0" prefWidth="522.0" style="-fx-background-color: transparent; -fx-vbar-policy: NEVER;">
+               <content>
+                  <AnchorPane prefHeight="636.0" prefWidth="520.0">
+                     <children>
+                        <Label layoutX="83.0" layoutY="74.0" text="password:" />
+                        <Label layoutX="82.0" layoutY="14.0" text="Welcome" />
+                        <Text fx:id="email" layoutX="168.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                        <Text fx:id="password" layoutX="168.0" layoutY="87.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+                        <Button fx:id="logout" layoutX="241.0" layoutY="206.0" mnemonicParsing="false" onMouseClicked="#onLogoutButtonClicked" text="Deconnexion" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </ScrollPane>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </AnchorPane>
+   </center>
+</BorderPane>
